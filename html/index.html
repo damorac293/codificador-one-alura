@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/3252299651.js" crossorigin="anonymous"></script>
+    <title>decode</title>
+</head>
+
+<body>
+
+    <h1>DECODER</h1>
+    <div class="bgBlur"></div>
+    <div class="maincontainer">
+        <!-- <input class="tbxCode" type="text" class="txt" required placeholder=" Escriba su mensaje"> -->
+        <textarea name="" id="codedTxt" onclick="getData()" cols="30" rows="10" class="tbxCode" style="border: none;"
+            placeholder="Escriba su mensaje"></textarea>
+        <div class="container">
+
+            <button id="btnEncrypt" class="buttonStyle" type="submit" onclick="encriptar()" title="Encriptar mensaje"
+                )><i class="fas fa-user-lock"></i></button>
+
+            <button id="btnUnEncrypt" class="buttonStyle" type="submit" onclick="desencriptar()"
+                title="Desencriptar mensaje"><i class="fa-solid fa-unlock-keyhole"></i></button>
+        </div>
+        <textarea name="" id="resultTxt" cols="30" rows="10" class="tbxCode" style="border: none;" readonly
+            placeholder="Mensaje encriptado" onclick="copy()" title="Click para copiar"></textarea>
+    </div>
+    </div>
+
+    <footer>David Mora Cerdas &copy;</footer>
+    <script src="../js/functions.js"></script>
+</body>
+
+</html>
