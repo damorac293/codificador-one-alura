@@ -98,7 +98,7 @@ function desencriptar() {
                 encryptTxt;
         }
     }
- 
+    // return (encryptTxt);
     result.innerHTML = encryptTxt;
 
 }
