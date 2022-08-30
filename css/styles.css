@@ -8,7 +8,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 /* .bgBlur {
@@ -20,6 +19,7 @@
     background-color: rgba(255, 255, 255, 0.164);
     margin: 0;
     padding: 0;
+    
 } */
 
 body {
@@ -63,6 +63,7 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 var(--shadowRange) 4px rgba(0, 0, 0, 0.185), var(--shadow-Range) 0 4px rgba(0, 0, 0, 0.185), var(--shadowRange) 0 4px rgba(0, 0, 0, 0.185);
     background-color: rgba(9, 159, 185, 0.329);
+    margin-bottom:80px;
 }
 
 .container {
@@ -88,7 +89,8 @@ h1 {
 }
 
 .tbxCode {
-    
+
+
     margin: 10px;
     padding: 5px;
     border-radius: 5px;
@@ -99,6 +101,7 @@ h1 {
 }
 
 footer {
+ 
     position:fixed;
     text-align: center;
     padding: 5px;
