@@ -1,4 +1,3 @@
-
 // Limpia elinput del mesaje encriptado
 function getData() {
 
@@ -26,26 +25,20 @@ function encriptar() {
 
         switch (letra) {
 
-            case 'a':
-                letra = "ai";
+            case 'a': letra = "ai";
                 break;
-            case 'e':
-                letra = "enter";
+            case 'e': letra = "enter";
                 break;
 
-            case 'i':
-                letra = "ober";
+            case 'i': letra = "ober";
                 break;
 
-            case 'o':
-                letra = "imes";
+            case 'o': letra = "imes";
                 break;
 
-            case 'u':
-                letra = "ufat";
+            case 'u': letra = "ufat";
                 break;
-            default:
-                letra;
+            default: letra;
         }
 
         newTxt = newTxt + letra;
@@ -58,7 +51,13 @@ function encriptar() {
 function desencriptar() {
 
     let letra = "";
-    let coded = ["ai", "enter", "ober", "imes", "ufat"]
+    let coded = [
+        "ai",
+        "enter",
+        "ober",
+        "imes",
+        "ufat"
+    ]
     let i = 0;
     let encryptTxt = document.getElementById("codedTxt").value;
     let result = document.getElementById("resultTxt");
@@ -72,30 +71,23 @@ function desencriptar() {
         }
         switch (letra) {
 
-            case 'ai':
-                encryptTxt = encryptTxt.replace(letra, "a")
+            case 'ai': encryptTxt = encryptTxt.replace(letra, "a")
                 break;
-            case 'enter':
-                encryptTxt = encryptTxt.replace(letra, "e")
+            case 'enter': encryptTxt = encryptTxt.replace(letra, "e")
                 break;
 
-            case 'ober':
-                encryptTxt = encryptTxt.replace(letra, "i")
+            case 'ober': encryptTxt = encryptTxt.replace(letra, "i")
                 break;
 
-            case 'imes':
-                encryptTxt = encryptTxt.replace(letra, "o")
+            case 'imes': encryptTxt = encryptTxt.replace(letra, "o")
                 break;
 
-            case 'ufat':
-                encryptTxt = encryptTxt.replace(letra, "u")
+            case 'ufat': encryptTxt = encryptTxt.replace(letra, "u")
                 break;
-            default:
-                encryptTxt;
+            default: encryptTxt;
         }
     }
 
     result.innerHTML = encryptTxt;
 
 }
-
