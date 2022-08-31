@@ -17,7 +17,7 @@
     <!-- <div class="bgBlur"></div> -->
     <div class="maincontainer">
         <!-- <input class="tbxCode" type="text" class="txt" required placeholder=" Escriba su mensaje"> -->
-        <textarea name="" id="codedTxt" onclick="getData()" cols="30" rows="10" class="tbxCode" style="border: none;"
+        <textarea name="" id="codedTxt"  onclick="getData();" onkeyup="javascript:this.value=this.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');" cols="30" rows="10" class="tbxCode" style="border: none; text-transform: lowercase;"
             placeholder="Escriba su mensaje"></textarea>
         <div class="container">
 

@@ -6,6 +6,8 @@ function getData() {
     let result = document.getElementById("resultTxt");
     result.innerHTML = "";
 }
+
+// console.log(getData("gráfico"));
 function copy(){
     let textWrite = document.getElementById("resultTxt").value;
     navigator.clipboard.writeText(textWrite);
