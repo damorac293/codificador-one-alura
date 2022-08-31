@@ -14,10 +14,11 @@
 <body>
 
     <h1>DECODER</h1>
-    <!-- <div class="bgBlur"></div> -->
     <div class="maincontainer">
-        <!-- <input class="tbxCode" type="text" class="txt" required placeholder=" Escriba su mensaje"> -->
-        <textarea name="" id="codedTxt"  onclick="getData();" onkeyup="javascript:this.value=this.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');" cols="30" rows="10" class="tbxCode" style="border: none; text-transform: lowercase;"
+
+        <textarea name="" id="codedTxt" onclick="getData();"
+            onkeyup="javascript:this.value=this.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');"
+            cols="30" rows="10" class="tbxCode" style="border: none; text-transform: lowercase;"
             placeholder="Escriba su mensaje"></textarea>
         <div class="container">
 
@@ -28,8 +29,9 @@
                 title="Desencriptar mensaje"><i class="fa-solid fa-unlock-keyhole"></i></button>
         </div>
         <textarea name="" id="resultTxt" cols="30" rows="10" class="tbxCode" style="border: none;" readonly
-            placeholder="Mensaje encriptado" onclick="copy()" title="Click para copiar"></textarea>
-    <!-- </div> -->
+            placeholder="Mensaje encriptado (Click para copiarlo)" onclick="copy()"
+            title="Click para copiar"></textarea>
+
     </div>
 
     <footer>David Mora Cerdas &copy;</footer>

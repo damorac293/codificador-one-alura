@@ -1,21 +1,18 @@
 
-
-
+// Limpia elinput del mesaje encriptado
 function getData() {
 
     let result = document.getElementById("resultTxt");
     result.innerHTML = "";
 }
 
-// console.log(getData("gráfico"));
-function copy(){
+// Funcion que copia el texto del input del mensaje encriptado
+function copy() {
     let textWrite = document.getElementById("resultTxt").value;
     navigator.clipboard.writeText(textWrite);
-    
-    // textWrite.select();
-    // document.execCommand('copy');
 }
 
+// Función que encripta la cadena enviada desde el input
 function encriptar() {
 
     let newTxt = "";
@@ -54,13 +51,10 @@ function encriptar() {
         newTxt = newTxt + letra;
 
     }
-
-    // return (newTxt);
     result.innerHTML = newTxt;
 }
 
-// console.log((encryptTxt));
-
+// Función que desencripta el mesaje enviado desde el input
 function desencriptar() {
 
     let letra = "";
@@ -100,9 +94,8 @@ function desencriptar() {
                 encryptTxt;
         }
     }
-    // return (encryptTxt);
+
     result.innerHTML = encryptTxt;
 
 }
 
-// console.log(desencriptar("boberenternventernoberdimess ai nufatenterstrimes mufatndimes"));
